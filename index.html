@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <script>
         tailwind.config = {
             theme: {
@@ -35,11 +36,38 @@
 </head>
 
 <body>
-    <header>
+    <!-- Nav -->
 
-    </header>
-    <main class="max-w-screen-xl mx-auto px-16 md:px-28">
+    <main class="max-w-screen-xl mx-auto px-5 md:px-28">
+        <nav class="flex justify-between items-center p-2 pt-5">
+            <h1 class="text-2xl font-bold text-orange-700"><i class="p-3 bg-orange-100 rounded-lg fa-solid fa-house"></i> Tea House</h1>
+            <span><i class="fa-solid fa-bars p-2 bg-orange-50 rounded-lg"></i></i></span>
+        </nav>
+        <!-- header section -->
+        <header class="pt-10 pb-20 flex flex-col md:flex-row gap-1 justify-between">
+            <!-- text content -->
+            <div class="space-y-5">
+                <h1 class="text-5xl md:text-7xl font-bold">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="text-gray-500">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your
+                    Taste Buds.</p>
+                <button
+                    class="px-5 py-4 rounded-lg text-white font-semibold text-xl bg-gradient-to-r from-orange-400 to-orange-600">Explore
+                    More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+            </div>
+            <!-- image content -->
+            <div class="relative">
+                <img class="w-full" src="./images/banner.png" alt="">
 
+                <div class="bottom-4 left-16 bg-white flex absolute items-center gap-1 shadow-md rounded-lg px-2 py-2 md:px-8 md:py-8 justify-center">
+                    <div><i class="fa-solid fa-star text-yellow-400 text-2xl md:text-4xl"></i></div>
+                    <div>
+                        <h3 class="text-xl md:text-3xl font-bold">5.00</h3>
+                        <p class="text-gray-500">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </header>
     </main>
 </body>
 
